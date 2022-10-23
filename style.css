@@ -33,7 +33,10 @@ html{
 .nav-container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
+    max-width: 1023px;
+    width: 92%;
+    padding: 20px 0;
 
 }
 .nav-list-item{
@@ -171,7 +174,7 @@ backdrop-filter: blur(5px);
     height: 170px;
     padding: 20px;
     margin-top: 15px;
-    font-size: 24px;
+    font-size: 0.9rem;
     font-family: 'Gilroy', serif;
     background: #FEFEFE;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
@@ -182,8 +185,8 @@ backdrop-filter: blur(5px);
     margin: 0 auto;
     display: block;
     margin-top: 10px;
-    max-width: 400px;
-    width: 150px;
+    max-width: 170px;
+    width: calc(100% - 58px);
     padding: 10px 10px;
     font-family: 'Gilroy', serif;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
@@ -198,7 +201,7 @@ backdrop-filter: blur(5px);
     display: block;
     width: calc(100% - 18px );
     height: 36px;
-    font-size: 24px;
+    font-size: 0.7rem;
     padding: 0 20px;
     font-family: 'Gilroy', serif;    
     background: #FEFEFE;
@@ -244,6 +247,7 @@ border-radius: 7px;
 .footer-container{
     max-width: 1100px;
     margin: 0 auto  ;
+    min-width: 370px;
 }
 .phone-number{
     color: #fff;
@@ -355,4 +359,20 @@ border-radius: 7px;
     font-family: 'Monserrat',serif;
     font-size: 39px;
     text-align: center;
+}
+
+@media (max-width: 561px){
+    .nav-list-item{
+        font-size: 0.5em;
+    }
+    .slider{
+        margin-top: 40px;
+    }
+    .footer-wrapper{
+        padding: 10px 0;
+    }
+    #submit{
+        min-width: 82px;
+    padding: 10px 0;
+    }
 }
