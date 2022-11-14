@@ -71,6 +71,8 @@ html{
     position: absolute;
     top: 50%;
     cursor: pointer;
+    width: 20px;
+    height: 25px;
 }
 .action-next:hover{
     opacity: 0.6;
@@ -401,4 +403,10 @@ border-radius: 7px;
     .slide-title{
         font-size: 10px;
     }
+}
+
+@media (max-width: 425px){
+    .action-next,
+.action-prev{
+    width: 15px;}
 }
