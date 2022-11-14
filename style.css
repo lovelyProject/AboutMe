@@ -377,6 +377,10 @@ border-radius: 7px;
         width: 80%;
         margin: 50px auto 0 auto;
     }
+
+    .slide-title{
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 561px){
@@ -392,5 +396,9 @@ border-radius: 7px;
     #submit{
         min-width: 82px;
     padding: 10px 0;
+    }
+
+    .slide-title{
+        font-size: 10px;
     }
 }
